@@ -87,7 +87,7 @@ in this case now function will act same as normal varibale in which undefined is
 > Namaste javascript
 > Uncaught ReferenceError: x is not defined
 
-**Type of variables also matters** :-
+**Type of variables declarations also matters** :-
 
 ###### # Incase of var
 
@@ -124,3 +124,5 @@ in this case now function will act same as normal varibale in which undefined is
 > }
 > Namaste javascript
 > Uncaught ReferenceError: Cannot access 'x' before initialization
+
+
