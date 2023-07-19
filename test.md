@@ -1,5 +1,7 @@
 # # hello world - to continue contribution daily - one contribution at a day
 
 - sun 16 jul 2023 ✅
-- sun 17 july 2023 ✅
-- sun 18 july 2023 ✅
+- mon 17 july 2023 ✅
+- tue 18 july 2023 ✅
+- wed 19 july 2023 ✅
+
