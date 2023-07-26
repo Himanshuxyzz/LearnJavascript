@@ -8,6 +8,8 @@
 - fri 21 july 2023 ✅
 - sat 22 july 2023 ✅
 - sun 23 july 2023 ✅
+- wed 26 july 2023 ✅
+
 
 
 
