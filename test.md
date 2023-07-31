@@ -11,6 +11,8 @@
 - wed 26 july 2023 ✅
 - fri 28 july 2023 ✅
 - sun 30 july 2023 ✅
+- mon 31 july 2023 ✅
+
 
 
 
