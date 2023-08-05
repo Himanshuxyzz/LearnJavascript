@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        .form_box {
+            border: 1px solid black;
+            width: 350px;
+            height: 450px;
+            padding: 12px;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 12px;
+            margin-block: 10px;
+        }
+
+        .form_input {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding-inline: 15px;
+        }
+
+        .form_input label {
+            font-weight: bold;
+        }
+
+        .form_input input {
+            height: 40px;
+            width: 100%;
+        }
+
+        .form_btn {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form_btn button {
+            width: 40%;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form_box" action="">
+        <div class="box">
+            <h2>Login</h2>
+        </div>
+
+        <div class="box form_input">
+            <label for="email">Enter email</label>
+            <input type="email" name="email">
+        </div>
+
+        <div class="box form_input">
+            <label for="password">Enter password</label>
+            <input type="password" name="password">
+        </div>
+
+        <div class="box form_btn">
+            <button>Login</button>
+            <button>Cancel</button>
+        </div>
+
+
+
+
+    </form>
+</body>
+
+</html>
