@@ -17,3 +17,5 @@
 - thu 3 Aug 2023 ✅
 - fri 4 Aug 2023 ✅
 - sat 5 Aug 2023 ✅
+- sun 6 Aug 2023 ✅
+
