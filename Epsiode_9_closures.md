@@ -122,12 +122,145 @@ a();
 
 fun fact : -> the values are retained
 
+
+
+##### #Clousers interview questions
+
+- ###### Question 1
+<pre class="code-example">
+function x() {
+    var i = 10;
+    setTimeout(function() {
+        console.log(i);
+    },1000)
+}
+
+x();
+output:- it will print 10 after 1000ms or equivalent to 1 second
+
+</pre>
+
+- ###### Question 2
+
+<pre class="code-example">
+function x() {
+    var i = 10;
+    setTimeout(function() {
+        console.log(i);
+    },4000);
+    console.log("Namaste Javascript);
+}
+
+x();
+output :- it will print Namaste Javascript first and then 10 after 1000ms or equivalent to 1 second
+
+reason :- because of the asynchronous nature of setTimeout() whic prevent event flow from stopping for setTimeout to finish
+</pre>
+
+- ###### Question 3
+
+<pre class="code-example">
+function x() {
+    for(var i = 1;i<=5;i++) {
+    setTimeout(function() {
+        console.log(i);
+    }, i * 1000);
+    }
+    console.log("Namaste Javascript");
+}
+
+x();
+output :- it will print Namaste Javascript first and then 6 after 1000ms or equivalent to 1 second each second for 5 times
+
+reason :- because of the asynchronous nature of setTimeout() and hositing of var variable which prevent event flow from stopping for setTimeout to finish and pointing to the refrence
+</pre>
+
+###### Question 4
+
+<pre class="code-example">
+function x() {
+    for(let i = 1;i<=5;i++) {
+    setTimeout(function() {
+        console.log(i);
+    }, i * 1000);
+    }
+    console.log("Namaste Javascript");
+}
+
+x();
+output :- it will print Namaste Javascript first and then 1...2....3...4...5..6 after 1000ms or equivalent to 1 second each second for 5 times
+
+reason :- because of the asynchronous nature of setTimeout() which prevent event flow from stopping for setTimeout to finish
+</pre>
+
+###### Question 5
+
+<pre class="code-example">
+function x() {
+    for(var i = 1;i<=5;i++) {
+        function close(i) {
+            setTimeout(function() {
+             console.log(i);
+    }, x * 1000);
+    }
+    close(i);
+    }
+    console.log("Namaste Javascript");
+}
+
+x();
+output :- it will print Namaste Javascript first and then 6 after 1000ms or equivalent to 1 second each second for 5 times
+
+reason :- because of the asynchronous nature of setTimeout() whic prevent event flow from stopping for setTimeout to finish
+</pre>
+
+##### #Data Hiding or Encapsulation
+
+<pre class="code-example">
+//counter 
+
+var count = 0;
+
+function counter() {
+    count++;
+}
+
+This will does the work but leaves with the data exposing issue to implement data hiding we can use concept of clousers
+
+function counter() {
+    var count = 0;
+    return function IncrementCounter() {
+        count++;
+        console.log(count);
+    }
+}
+
+This will provide data hiding feature by not exposing the count variable
+
+var counter1 = counter(); inner function gets returned from the counter function which have the refrence to the outer function or we can say it forms a closure
+counter1();
+counter1();
+
+</pre>
+
 #### #Uses of Clousers
-* Module Design Pattern
-* Currying
-* Functions like once
-* Memoize
-* Maintaining state in async world
-* SetTimeouts
-* Iterators
-* And many more ....
+
+- Module Design Pattern
+- Currying
+- Functions like once
+- Memoize
+- Maintaining state in async world
+- SetTimeouts
+- Iterators
+- And many more ....
+
+
+#### #Disadvantages of Clousers
+
+ - Over consumption of memory in clousers because every time clousers are formed it consume lots of memory and sometimes not garbage collected that means it accumlates lot of memory if we use clousers.
+
+ - Can also lead to memory leaks because memory is accumlated and freeze the browser.
+
+
+#### #Important Video
+https://www.youtube.com/watch?v=t1nFAMws5FI&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=16

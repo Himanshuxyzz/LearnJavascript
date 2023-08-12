@@ -7,16 +7,28 @@
 // }
 // x();
 
-function a() {
-  var w = 15;
-  function b() {
-    var x = 20;
-    function c() {
-      console.log(w, x);
+// function a() {
+//   var w = 15;
+//   function b() {
+//     var x = 20;
+//     function c() {
+//       console.log(w, x);
+//     }
+//     c();
+//   }
+//   b();
+// }
+
+// a();
+
+
+function x() {
+    for(var i = 1;i<=5;i++) {
+    setTimeout(function() {
+        console.log(i);
+    }, i * 1000);
     }
-    c();
-  }
-  b();
+    console.log("Namaste Javascript");
 }
 
-a();
+x();
