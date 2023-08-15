@@ -77,18 +77,44 @@ console.log("hello")
 }
  </pre>
 - **Named function expression**
+A named function expression is a function expression with a name. The name is only accessible inside the function, making it useful for recursion or self-referencing.
 <pre class="code-example">
- 
+ var a = function b() {
+    console.log("hello");
+ }
  </pre>
 - **Difference between parameters & arguments ?**
+Parameters are the variables defined in a function's declaration, while arguments are the values passed to a function when it is called. Parameters are used within the function to perform operations, while arguments provide the values for those operations.
+
+- Parameter
 <pre class="code-example">
- 
+ var b = function(parameter1,parameter2){
+    console.log("parameter" parameter1 , "parameter" parameter2);
+ }
  </pre>
-- **First class functions**
+- Arguments
 <pre class="code-example">
- 
+var b = function(parameter1,parameter2){
+   console.log("parameter" parameter1 , "parameter" parameter2);
+}
+
+b(argumet1,argument2);
+e.g - b(1,2)
+
+</pre>
+- **First class functions**
+In JavaScript, functions are considered first class citizens, which means they can be treated as values, assigned to variables, passed as arguments to other functions, and returned from functions.
+<pre class="code-example">
+var a = function x() {
+    return function () {
+        console.log("inner function");
+    }
+}
+
+var test = a() // it will return inner anonymous function
  </pre>
 - **Arrow functions**
+This is introduced in ES6 in the year 2015 
 <pre class="code-example">
  
  </pre>
