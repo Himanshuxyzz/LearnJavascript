@@ -30,44 +30,15 @@
 
 <body>
     Namaste Javascript
-    <!-- <div class="image-container">
-        <img src="bw.png" alt="Black and White Image" class="black-white-image" />
-        <img src="clr.jpg" alt="Colored Image" class="colored-image" />
-    </div> -->
 
-    <!-- <script>
-        const container = document.querySelector('.image-container');
-        // Add event listener for mouseover event
-        container.addEventListener('mousemove', handleMouseMove);
-        function handleMouseMove(event) {
-            // Get the black and white image element
-            const bwImage = document.querySelector('.black-white-image');
+    <button id="clk">Click me!</button>
 
-            // Calculate the cursor position within the container
-            const containerRect = container.getBoundingClientRect();
-            const cursorX = event.clientX - containerRect.left;
-            const cursorY = event.clientY - containerRect.top;
 
-            // Set the color of the pixel at the cursor position in the black and white image to transparent
-            const canvas = document.createElement('canvas');
-            canvas.width = bwImage.width;
-            canvas.height = bwImage.height;
-            const context = canvas.getContext('2d');
-            context.drawImage(bwImage, 0, 0);
-            const imageData = context.getImageData(cursorX, cursorY, 1, 1);
-            const pixelData = imageData.data;
-            pixelData[3] = 0; // Set alpha value to 0 to make it transparent
-            context.putImageData(imageData, cursorX, cursorY);
-
-            // Set the updated black and white image as the source of the colored image element
-            const coloredImage = document.querySelector('.colored-image');
-            coloredImage.src = canvas.toDataURL();
-        }
-    </script> -->
     <!-- <script src="./Episode_2_Hoisting.js"></script> -->
     <!-- <script src="./Episode_6_Scope_chain.js"></script> -->
     <!-- <script src="./Episode_8_block_scope_and_shadowing_in_js.js"></script> -->
-    <script src="./Epsiode_9_closures.js"></script>
+    <!-- <script src="./Epsiode_9_closures.js"></script> -->
+    <script src="./Episode_11_Callback.js"></script>
 </body>
 
 </html>

@@ -112,9 +112,15 @@ var a = function x() {
 }
 
 var test = a() // it will return inner anonymous function
+
  </pre>
 - **Arrow functions**
 This is introduced in ES6 in the year 2015 
 <pre class="code-example">
- 
+ var f = () => {
+    console.log("hello");
+ }
+
+f()
+
  </pre>
