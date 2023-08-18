@@ -25,6 +25,10 @@
         font-weight:700;
          background-color:#d9d9d9; border-radius:8px;
     }
+
+    .nothing {
+        padding:10px;
+    }
 </style>
 
 #### # Callbacks
