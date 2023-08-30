@@ -8,7 +8,7 @@
         padding-inline:15px;
         padding-block:6px;
         background-color:#d9d;
-        border-radius:3px;
+       border-radius:3px;
         font-weight:700;
     }
     .highlight-em {
@@ -69,3 +69,27 @@ document.getElementById('btn).addEventListener('click',function callback() {
 });
 console.log("end");
 </pre>
+
+**# How Event Listeners Work In Js**
+
+<pre class="code-example">
+console.log("start");
+document.getElementById('btn).addEventListener('click',function callback() {
+    console.log("callback")
+});
+console.log("end");
+</pre>
+
+**What is addEventListener ?**
+
+It's given by the browser through the browser javascript engine by window object in form of web api which is a DOM api
+
+**How it work ?**
+
+It registers the callback on a event when event is clicked , in detail inside the web api env. the callback is registered and then event is attached on it e.g -? 'click,'hover' e.t.c and after attaching and moves on and start executing next line then we have nothing to execute and GEC moves out of call stack but event handlers presist on web api env until and unless explicitly remove the listener or close the browser,
+
+so when button is clicked this callback method pushed inside the callback queue and it waits for it's turn to be executed.
+
+**# Event Loop**
+
+Event loop has only job is to continously monitor the call stak and callback queue so if this callback queue is empty and this event loops sees that also a function waiting to be executed inside callback queue so event loop it just takes the function and push it inside call stack and quickly executes it and then after done callback is popped outside of callstack
