@@ -93,3 +93,15 @@ so when button is clicked this callback method pushed inside the callback queue 
 **# Event Loop**
 
 Event loop has only job is to continously monitor the call stak and callback queue so if this callback queue is empty and this event loops sees that also a function waiting to be executed inside callback queue so event loop it just takes the function and push it inside call stack and quickly executes it and then after done callback is popped outside of callstack
+
+**# How fetch works ?**
+
+Fetch is use for request api call so this fetch function returns promise and we have to pass callback function once this promise is resolved.
+
+for complete refrence - https://www.youtube.com/watch?v=8zKuNo4ay8E&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=20 at 27:30
+
+**#Micro task queue (more priority over callback queue)**
+
+soo much to write lazy enough to write
+
+for complete refrence - https://www.youtube.com/watch?v=8zKuNo4ay8E&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=20 at 30:29
