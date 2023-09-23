@@ -29,10 +29,4 @@
 - fri 15 sept 2023 ✅
 - sat 16 sept 2023 ✅
 - Thu 21 sept 2023 ✅
-
-
-
-
-
-
-
+- Fri 23 sept 2023 ✅
