@@ -3,7 +3,7 @@
 **Example :**
 
 **Q : Why do we even need to provide auto suggest in search ?**
-Ans : To provide better ux.
+Ans : To provide better ux..
 
 Debouncing says suppose if your typing too fast then the diff. between two keystrokes is very less, where as suppose if your typing too slow then diff. between two keystrokes is very high.
 
