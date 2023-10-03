@@ -22,7 +22,7 @@ It can cause huge difference in real life scenarios
 
 - we just make 4 api calls + 1000 users = 4000 api calls
 
-normally debouncing in search are applied with 200ms
+normally debouncing in search are applied with 200milli seconds
 
 - if difference between 2 key strokes is <200ms - decline api call. 
 - if difference between 2 key strokes is >= 200ms - make an api call.
