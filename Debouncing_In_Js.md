@@ -24,5 +24,22 @@ It can cause huge difference in real life scenarios
 
 normally debouncing in search are applied with 200milli seconds
 
-- if difference between 2 key strokes is <200ms - decline api call. 
+- if difference between 2 key strokes is <200ms - decline api call.
 - if difference between 2 key strokes is >= 200ms - make an api call.
+
+---
+
+**Caching**
+
+In debouncing every character we writes leads to call an api so for efficient and performant practice we cache the data so that writing same search query don't call api over n over for multiple times.
+
+we also need some data structure to store the cache data for effiecient retrieval of data.
+
+time complexity to search in array = O(n)
+
+time complexity to search in object = O(1)
+
+we can also use hashmap and set.
+
+**LRU - (Least Recently Usef)**
+ 
