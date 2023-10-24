@@ -16,7 +16,7 @@ It can cause huge difference in real life scenarios
 
 - iphone 11 pro max = there are 17 characters and if we call an api on every character then it will be resource heavy if there are concurrent users the no of times the api is called will be very high.
 
-**$ scenario** : 14 characters \* 1000 users = 14000 api calls
+**scenario** : 14 characters \* 1000 users = 14000 api calls
 
 **Debouncing**
 
