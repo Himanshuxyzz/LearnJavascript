@@ -94,7 +94,7 @@ Then syntax parser comes into play, which converts the code into AST (Abstract S
 
 ##### # Compilation
 
-Javascript has something known as JIT (just in time) compilation ,**Javascript can behaves as interpreted and compiled language** language First of all What is an interpreter ? So it basically takes your code and starts executing the code line by line in the order and that's how whole code is executed.
+Javascript has something known as JIT (just in time) compilation ,**Javascript can behaves as interpreted and compiled language** First of all What is an interpreter ? So it basically takes your code and starts executing the code line by line in the order and that's how whole code is executed.
 
 Where as There are other languages which uses compiler to compile the code, so in case of compiler whole code is compiled first of all even before executing, so the code is compiled and a new code is compiled and new code is formed which is the optimised version of the code the it's executed.
 
@@ -105,7 +105,7 @@ Where as There are other languages which uses compiler to compile the code, so i
 
 **Javascript can behaves as interpreted and compiled language to be dependent on the javascript engine when brandon created javascript it was supposed to be a interpreted language The javascript engine he wrote uses the interpreter to execute becuase javscript runs on the browser and browsers can't wait for the code to be compiled before executing code But now all modern browser and js engines uses an interpreter and compiler both together tha's why now days it's purely dependent upon the js engine whether it's purely interpreted or JIT compiled**
 
-###### # JIT (Just In Time) compiler
+###### # JIT(Just In Time) compiler
 
 Which uses both interpreter and compiler both together to execute the code
 
