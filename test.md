@@ -35,7 +35,9 @@
 - Thu 28 sept 2023 ✅
 - Fri 29 sept 2023 ✅
 - Wed 25 oct 2023 ✅
-- THU 25 oct 2023 ✅
+- THU 26 oct 2023 ✅
+- Sun 29 oct 2023 ✅
+
 
 
 
