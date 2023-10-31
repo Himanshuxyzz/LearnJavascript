@@ -38,6 +38,8 @@
 - THU 26 oct 2023 ✅
 - Sun 29 oct 2023 ✅
 - Mon 30 oct 2023 ✅
+- Tue 31 oct 2023 ✅
+
 
 
 
