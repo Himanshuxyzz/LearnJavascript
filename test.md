@@ -41,6 +41,7 @@
 - Tue 31 oct 2023 ✅
 - Wed 1 Nov 2023 ✅
 - fri 3 Nov 2023 ✅
+- Mon 6 Nov 2023 ✅
 
 
 
