@@ -113,6 +113,8 @@ Which uses both interpreter and compiler both together to execute the code
 
 After interpreting AST now interpreter converts the high level code to byte code and moves to execution step and while it's doing so it takes help of compiler to optimise the code so compiler basically talks to the interpreter and while the code is interpreted line by line the compiler tries to optimise the code line by line as much as it can it's not one phase process rather it's an multiple phase process all these js engines having different algorithms of doing it so the job of compiler is to optimise the code as much as it can on runtime that is why it also known as just in time compilation, In some js engines they have AOT (Ahead Of Time) compilation in that case it takes some piece of code which is going to be executed later and try to optimise as much as it can and also produce byte code which is then goes into execution phase and execution over there is not possible without these two major components of js engine which are 
 - Call Stack -> Where all execution takes place.
-- Memory Heap -> Where all memory is stored so it's constantly synced with call stack and garbage collector and lot of other things which are working together so memory heap is a space where variables and functions are assigned memory 
 
 
+- Memory Heap -> Where all memory is stored so it's constantly synced with call stack and garbage collector and lot of other things which are working together so memory heap is a space where variables and functions are assigned memory. 
+
+- Garbage Collector -> It basically tries to free up memory when ever possible when some function is not being used or clear the timeout so it basically collects all garbage and sweeps it using algorithm "mark and sweep" 

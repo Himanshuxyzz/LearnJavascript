@@ -1,3 +1,4 @@
+<!-- trunk-ignore-all(prettier) -->
 ##### # hello world - to continue contribution daily - one contribution at a day
 
 - sun 16 july 2023 ✅
