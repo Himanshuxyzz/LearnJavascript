@@ -118,3 +118,5 @@ After interpreting AST now interpreter converts the high level code to byte code
 - Memory Heap -> Where all memory is stored so it's constantly synced with call stack and garbage collector and lot of other things which are working together so memory heap is a space where variables and functions are assigned memory. 
 
 - Garbage Collector -> It basically tries to free up memory when ever possible when some function is not being used or clear the timeout so it basically collects all garbage and sweeps it using algorithm "mark and sweep" 
+
+
