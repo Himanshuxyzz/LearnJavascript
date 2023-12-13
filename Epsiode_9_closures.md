@@ -122,8 +122,6 @@ a();
 
 fun fact : -> the values are retained
 
-
-
 ##### #Clousers interview questions
 
 - ###### Question 1
@@ -254,13 +252,19 @@ counter1();
 - Iterators
 - And many more ....
 
-
 #### #Disadvantages of Clousers
 
- - Over consumption of memory in clousers because every time clousers are formed it consume lots of memory and sometimes not garbage collected that means it accumlates lot of memory if we use clousers.
+- Over consumption of memory in clousers because every time clousers are formed it consume lots of memory and sometimes not garbage collected that means it accumlates lot of memory if we use clousers.
 
- - Can also lead to memory leaks because memory is accumlated and freeze the browser.
+- Can also lead to memory leaks because memory is accumlated and freeze the browser.
 
+#### #setTimeout()
+
+incase of setTimeout(() => {
+//something asnchronous
+},0)
+When delay is larger than 2147483647 or less than 1, the delaywill be set to 1. Non-integer delays are truncated to an integer.
 
 #### #Important Video
+
 https://www.youtube.com/watch?v=t1nFAMws5FI&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=16
